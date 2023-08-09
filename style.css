@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+}
+p {
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+button {
+  height: 50px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main__container {
+  min-height: 85vh;
+  width: min(470px, 90%);
+  background-color: white;
+  border-radius: 20px;
+}
+.main__banner {
+  height: 35%;
+  border-radius: 20px 20px 0px 0px;
+}
+.main__banner > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.main__content {
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__content__container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.description {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.plan__choose {
+  height: 80px;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.main__content__container > h1 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: hsl(223, 47%, 23%);
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.plan__choose {
+  margin-bottom: 25px;
+}
+
+#proceed-to-payment {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  box-shadow: 0px 5px 20px hsla(245, 75%, 52%, 0.7);
+  transition: transform 0.2s ease-in-out;
+}
+
+#cancel-order {
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 15px;
+}
+#proceed-to-payment:hover {
+  background-color: #756df0;
+}
+
+.plan__choose {
+  display: flex;
+}
+
+.plan__icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan__icon > img {
+  width: 50px;
+  height: 50px;
+}
+
+.plan__info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.plan__info > h2 {
+  font-size: 16px;
+}
+
+.plan__changer {
+  width: 20%;
+}
+
+#plan-class {
+  color: hsl(223, 47%, 23%);
+}
+
+#plan-price {
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan__changer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#plan-change-button {
+  background-color: transparent;
+  margin-bottom: 0px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+}
+
+#plan-change-button:hover {
+  color: #756df0;
+  text-decoration: none;
+}
+
+@media screen and (max-width:376px){
+  .plan__icon{
+    padding-left: 20px;
+  }
+  .plan__info{
+    padding-left: 20px;
+  }
+  .plan__changer{
+    padding-right: 20px;
+  }
+}
