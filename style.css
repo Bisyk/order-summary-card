@@ -30,7 +30,6 @@ button {
 }
 
 .main__container {
-  min-height: 85vh;
   width: min(470px, 90%);
   background-color: white;
   border-radius: 20px;
